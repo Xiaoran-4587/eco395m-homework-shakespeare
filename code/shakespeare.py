@@ -98,7 +98,7 @@ def sort_word_counts(word_counts):
 def write_word_counts(sorted_word_counts, path):
     """Takes a list of (word, count) tuples and writes them to a CSV."""
 
-        with open(path, "w", newline="", encoding="utf-8") as file:
+    with open(path, "w", newline="", encoding="utf-8") as file:
         writer=csv.writer(file)
         writer.writerow(["word", "count"])
 
