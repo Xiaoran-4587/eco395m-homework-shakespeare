@@ -15,7 +15,7 @@ LAST_LINE_START = "End of this Etext"
 def load_stopwords():
     """Load the stopwords from the file and return a set of the cleaned stopwords."""
 
-    stopwords = set()
+    stopwords=set()
 
     with open(STOPWORDS_PATH, encoding="utf-8") as file:
         text=file.read().lower()
